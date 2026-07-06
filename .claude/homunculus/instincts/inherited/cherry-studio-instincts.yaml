@@ -1,0 +1,319 @@
+# Instincts generated from https://github.com/Sherlock999xxx/cherry-studio
+# Generated: 2026-07-06T14:43:00.643Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: cherry-studio-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: ci
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: ci(deps): bump the npm_and_yarn group across 2 directories with 14 updates
+
+---
+id: cherry-studio-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Commit Length
+
+## Action
+
+Write moderate-length commit messages (~74 characters)
+
+## Evidence
+
+- Average commit message length: 74 chars
+- Based on 1 commits
+
+---
+id: cherry-studio-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: cherry-studio-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: cherry-studio-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: cherry-studio-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: cherry-studio-instinct-file-naming-camelcase
+trigger: "When creating a new file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct File Naming Camelcase
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: cherry-studio-instinct-function-naming-camelcase
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Function Naming Camelcase
+
+## Action
+
+Use camelCase for the function name
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: cherry-studio-instinct-class-naming-pascalcase
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Class Naming Pascalcase
+
+## Action
+
+Use PascalCase for the class name
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: cherry-studio-instinct-constant-naming-screaming-snake-case
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Constant Naming Screaming Snake Case
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: cherry-studio-instinct-import-style-relative
+trigger: "When importing modules within the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: cherry-studio-instinct-export-style-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: cherry-studio-instinct-commit-format-conventional-ci
+trigger: "When writing a commit related to continuous integration or dependencies"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Commit Format Conventional Ci
+
+## Action
+
+Use the conventional commit prefix 'ci' and a descriptive message
+
+## Evidence
+
+- Seen in commit: ci(deps): bump the npm_and_yarn group across 2 directories with 14 updates
+- Pattern in commits.prefixes: ["ci"]
+
+---
+id: cherry-studio-instinct-commit-length-clarity
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Commit Length Clarity
+
+## Action
+
+Write a clear, descriptive message with sufficient detail (average ~74 characters)
+
+## Evidence
+
+- Pattern in commits.averageLength: 74
+- Seen in commit: ci(deps): bump the npm_and_yarn group across 2 directories with 14 updates
+
+---
+id: cherry-studio-instinct-test-location-separate
+trigger: "When adding or organizing test files"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate location from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: cherry-studio-instinct-monorepo-packages-folder
+trigger: "When adding a new package or module to the monorepo"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: Sherlock999xxx/cherry-studio
+---
+
+# Cherry Studio Instinct Monorepo Packages Folder
+
+## Action
+
+Place it under the 'packages' directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders: packages
+
